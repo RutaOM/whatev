@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js3</title>
+</head>
+<body>
+	<p id="prekes" onmouseenter='preke.taikytiNuolaida()'; onmouseleave='preke.paliktiKaina()'></p> 
+	<script type ='text/javascript'>/*zodi preke.pries taikyti nuolaida perkeliam, kad susirastu funkcija is objekto*/
+
+
+
+			var preke = {
+					vardas: 'Echo Dot',
+					kaina: 49.99,
+					nuotrauka: true,
+					nuolaida: 20.00,
+					taikytiNuolaida: function(){ //sita funkcija perkelem i objekta.
+					document.getElementById('prekes').innerHTML = '<s>'+preke.kaina+'</s>'+' '+(preke.kaina-preke.nuolaida).toFixed(2); //tampalocal scope
+				},paliktiKaina: function (){
+					document.getElementById('prekes').innerHTML = preke.kaina;
+				}
+				}
+				console.log(preke);//patikrinimas konsoleje1
+
+				preke.tipas = 'Smart Home';//pridejau tipa //patikrinimas konsoleje2
+
+				/*console.log(preke.vardas); *///sio galima nepalikt
+				console.log(preke);
+				document.getElementById('prekes').innerHTML = preke.kaina;
+				
+				document.write('<h1>'+preke.vardas+'</h1>');
+
+				document.write('<p>'+(preke.kaina-preke.nuolaida).toFixed(2)+'</p>'); //kiek sk palikti po kablelio.
+
+				document.write('<h2>'+preke.tipas+'</h2>')//pridejau tipa
+
+				/*function taikytiNuolaida(){
+					document.getElementById('prekes').innerHTML = '<s>'+preke.kaina+'</s>'+' '+(preke.kaina-preke.nuolaida).toFixed(2); - kai virsuj perkialam zodi preke, tai visa sita funkcija perkialiam irgi i objekta.
+				}*/
+				/*function paliktiKaina(){
+					document.getElementById('prekes').innerHTML = preke.kaina.toFixed(2);
+				}*/
+				var preke = {
+					spalva: ['juoda','auskine'],//ojketo laukas gali buti masyvas.
+				}
+				var imone = {
+					direktorius: {
+						vardas: 'jonas',
+						atlyinimas: 200
+					},
+					darbuotojai:[
+					{ vardas 'tomas'}
+					]
+				}
+
+
+
+
+
+		/*var suma = function(x,y){               //visais atvejais gaunasi taip pat://
+			var s;
+			s = x+y;
+			return s;
+		}*/
+
+
+		/*var suma = function(x,y){
+			return x+y;
+		}
+
+
+	/*	function suma(x,y){				//<--geriausias variantas rasyti//
+			var s;
+			s = x+y;
+			return s;
+		}*/
+		//console.log(suma(5,4));
+		//console.log(suma(6,2));//
+		//console.log(suma(7,-5));  //
+
+//f-jia, kuri sudaugina veiksmus//
+
+	/*		function daugyba(x,y){				
+			var s;
+			s = x*y;
+			return s;
+		}
+		console.log(daugyba(5,4));
+		console.log(daugyba(6,2));
+		console.log(daugyba(7,-5));
+
+
+
+//parasyti funkcija, kuri skaiciu pakelia kvadratu//
+
+
+		function kvadratas(x){
+			var s;
+			s = x*x;
+			return s;
+		}
+		console.log(kvadratas(5));
+		console.log(kvadratas(6));
+		console.log(kvadratas(7));
+
+		//kurii patikrina ar vartotojas ivede skaiciu tarp 0 ir 10//
+
+
+		var ivestis = prompt('iveskite skaiciu');
+		arDesimt(ivestis);
+		function arDesimt(skaicius){
+			if (skaicius <= 10&&skaicius>=0){
+				console.log('ivestis tinkama');
+			}else{
+				var ivestis2 = prompt('iveskite skaiciu');
+				arDesimt(ivestis2); //vel siunciam i pradzia iskviete ta pacia funkcija
+			}
+		}
+			*/	//kuri pavercia atstuma myliomis i atstuma kilometrais
+
+
+		/*	var ivestismyl = prompt('iveskite atstuma myliomis');
+			convert(ivestismyl);
+
+				function convert(x){
+					return x*1.609344;
+					}
+					console.log(convert(ivestismyl));
+
+
+			//Kuri skaiciu pakelia pasirinktu laipsniu*/
+
+			/*var skaicius = prompt('iveskite skaiciu, kuris bus pakeltas laipsniu');
+			var laipsnis = prompt('kokiu laipsniu')
+
+			laipsniu(skaicius,laipsnis);
+
+			function laipsniu(x,y){
+				return Math.pow(x,y);
+			}
+			console.log(laipsniu(skaicius, laipsnis));*/
+
+
+
+			//kuri is masyve esanciu skaiciu atspausdina tik lyginius skaicius
+
+
+		/*	var masyvas = [5,9,2,4,12];
+
+			for(i = 0; i <masyvas.length; i++){
+				console.log(lyginiai(masyvas[i]));
+			}
+			lyginiai(masyvas);
+
+			function lyginiai(x){
+				if (x % 2 == 0){
+					return x;
+				}else{
+					return 'nelyginis';
+				}
+			}*/
+
+			
+
+
+		/*	var masyvas = [5,9,2,4,12];
+			var lyginisarr = [];
+		
+
+			for(i = 0; i <masyvas.length; i++){
+				if(lyginiai(masyvas[i]) !=false){
+					console.log(lyginiai(masyvas[i]));
+				}
+			}
+			function lyginiai(x){
+				if (x % 2 == 0){
+					return x;
+				}else{
+					return false;
+				}
+			}*/
+
+			//	ivedus vartotojo varda, pasisveikintu jo vardu
+
+
+		/*	var vardas = prompt('irasykite varda');
+			labas(vardas);
+			function labas(x){
+				if(vardas = x){
+					alert('Labas' + ' '+(x)+' ' + '!');
+				}
+			}*/
+
+				//kuri atspausdintu masyvo ilgi
+
+
+			/*var masyvas = [1,3,2,4,8,6,4,7];
+			koksIlgis(masyvas);
+			function koksIlgis(x){
+				console.log('Masyvo ilgis yra:' + x.length)
+				}*/
+
+
+			//kuri perraso skaiciu is kitos puses
+
+
+			/*var skaicius = prompt('irasykite skaiciu'); //string.split
+			console.log(atvirksciai(skaicius));
+			function atvirksciai(sk){
+				sk = sk + '';
+				return sk.split('').reverse().join('');		//issidelioja i masyva. masyvas turi reverse ir join
+			}*/
+
+
+			//kuri is ivesto sakinio randa ilgiausia zodi
+
+
+			/*var ilgiausiais = prompt('iveskite sakini')*/
+
+
+			//kuri patikrina ar ivestas skaicius yra pirminis
+
+				/*var ivestis = prompt('iveskite skaiciu');
+				console.log(arPirminis(ivestis));
+
+				function arPirminis(x){
+					if(x == 1){
+						return false;
+					}else if (x == 2){
+						return true;
+					}
+					if(x % 2 != 0){
+							for(var i = 2; i < x; i++){
+								if(x % i == 0){
+									return false;
+									console.log(i);
+										}
+									
+								}
+							return true;
+						}else{
+							return false;
+						}
+
+					}*/
+
+
+
+				//OBJEKTAI
+
+
+
+				
+
+
+			/*== 1
+			return'ne pirminis'
+			x == 2
+			return 'pirminis'
+
+			13 % 2==12
+			16 % 2==0*/
+
+
+
+
+	</script>
+
+</body>
+</html>

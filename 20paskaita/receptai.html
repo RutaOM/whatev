@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./style/normalize.css">
+	<link rel="stylesheet" type="text/css" href="./style/skeleton.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.js"></script>
+
+</head>
+<body>
+	<div class="container" id="mas">
+	<table >
+		<tr v-for="receptas in receptai"  v-show="checked.includes(receptas.meat)">
+		<td>
+			<img v-bind:src="'img/'+receptas.image" alt="Patiekalas"/>
+			<strong>{{receptas.name}}-</strong>
+		</td>
+		<td>
+			<ul>
+				<li v-for="i in receptas.ingredients">
+					{{i}}
+				</li>
+			</ul>
+		</td>
+		<td>
+			<strong>Paruosimo laikas: </strong>{{receptas.prep_time}}			
+		</td>
+		<td>
+			<strong>Gaminimo laikas: </strong>{{receptas.cook_time}}
+		</td>
+		</div>
+	</tr>
+	<label for="a">
+		<input type="checkbox" value="pork" v-model="checked">
+		Kiauliena
+	</label>
+	<label for="b">
+		<input type="checkbox" value="chicken" v-model="checked">
+		Vistinea
+	</label>
+	<label for="c">
+		<input type="checkbox" value="beef" v-model="checked">
+		Jautinea
+	</label>
+	<label for="d">
+		<input type="checkbox" value="loaf" v-model="checked">
+		Loufas
+	</label>
+	<br>
+	<span>{{checked}}</span>
+	<table>
+		<tr v-for="receptas in receptai"></tr>
+	</table>
+	</table>
+</div>
+	<script src="dbaze.js"></script>
+	<script src="mas.js"></script>
+</body>
+</html>

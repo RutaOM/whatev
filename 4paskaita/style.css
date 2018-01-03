@@ -1,0 +1,198 @@
+body{
+	margin: 0 auto;
+}
+
+nav{
+	background: #c68c53;
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	line-height: 50px;
+	top:0;
+}
+
+nav > a.brand{
+	font-size: 20px;
+	color: white;
+	padding: 0 10px;
+}
+
+nav > a{
+	color: white;
+	padding: 0 15px;
+	text-decoration: none;
+}
+
+nav > a:hover{
+	background: #ac7339;
+}
+
+section.hero{
+	width: 100%;
+	min-height: 600px;
+	background-image: url(cat.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	margin-top: 50px;
+	text-align: center;
+	padding-top: 50px;
+	min-height: 400px;
+	background-position: center;
+}
+
+section.hero > h1{
+	color: white;
+	margin-top: 50px;
+	font-size: 46px;
+	font-family: gabriola;
+	background: rgba(0,0,0,0.4);
+}
+
+section.hero > h3{
+	color: white;
+	font-size: 32px;
+	background: rgba(0,0,0,0.2);
+	font-family: gabriola;
+
+}
+
+section.hero > a{
+	color: white;
+	border: 1px solid #fff;
+	padding: 10px 20px;
+	border-radius: 10px;
+	background: rgba(0,0,0,0.5);
+	font-family: gabriola;
+
+}
+
+
+section.about-us{
+	padding: 20px 10px;
+	clear: both;
+	height: auto;
+
+}
+section.about-us > .image{
+	width: 49%;
+	float: left;
+}
+section.about-us > .image > .responsive{
+	width: 100%;
+}
+section.about-us > .text{
+	width: 49%;
+	float: left;
+	margin: 5px;
+}
+section.contacts{
+	background-color: grey;
+	padding: 50px 10px;
+}
+section.contacts > .contact-text, section.contact-form{
+	width: 49%;
+}
+
+section.contacts > .contact-text{
+	color: white;
+	text-align: right;
+	float: left;
+}
+
+section.contacts > .contact-form{
+	float: right;
+	width: 49%;
+}
+section.contacts > .contact-form > h1{
+	color: white;
+}
+
+section.contacts > .contact-form > .card{
+	background-color: rgba(255,255,255,0.5);
+	padding: 10px;
+}
+
+section.contacts > .contact-form > .card input{
+	width: 100%;
+	height: 30%;
+	border-radius: 5px;
+}
+section.contacts > .contact-form > .card textarea{
+	width: 100%;
+	border-radius: 5px;
+}
+
+section.contacts > .contact-form > .card button{
+	padding: 8px 15px;
+	background: #c68c53;
+	border: 1px solid #c68c53;
+	color: white;
+}
+
+section.price{
+	padding: 50px 20px;
+}
+section.price > table{
+	width: 100%;
+	text-align: center;
+	border:1px solid black;
+}
+
+section.price >table td{
+	border: 1px solid black;
+	box-sizing: border-box;
+}
+
+footer{
+	
+	text-align: center;
+	font-family: gabriola;
+	height: 50px;
+	line-height: 50px;
+	background-color: lightgrey;
+}
+
+footer > a{
+	color: #c68c53;
+	text-decoration: none;
+}
+@media screen and (max-width:600px){
+	section.hero{
+		height: 600px;
+		background-size: cover;
+		background-position: center;
+
+}
+	nav > a{
+	display: none;
+
+}
+	nav > a.brand{
+		display: block;
+		float: left;
+
+}
+	nav > a.on-mobile{
+		display: block;
+		float:right;
+	}
+	section.about-us > .image{
+	width: 100%;
+	float: left;
+}
+
+	section.about-us > .text{
+	width: 100%;
+	float: left;
+}
+@media screen and (min-width: 601px){
+	nav > a.on-mobile{
+		display: none;
+
+	}
+section.about-us > .image, section.about-us > .text{
+	width: 100%;
+}
+
+
+}

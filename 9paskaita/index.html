@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS</title>
+</head>
+<body>
+<script>
+
+	/*ivedus du sk spausdina didesni*/
+
+
+	/*var ivestis1, ivestis2;
+
+	ivestis1 = prompt('iveskite pirma sk:');
+
+	ivestis2 = prompt('iveskite antra sk:');
+
+		if(ivestis1 > ivestis2){
+			console.log('didesnis skaicius yra pirmas:' + ivestis1);
+		}else if(ivestis1 == ivestis2){
+			console.log('abu sk yra vienodi');
+		}else{
+			console.log('didesnis skaicius yra antras' + ivestis2);
+		}*/
+
+ //ivedus skaiciu nuo 1 iki 7, atspaudnintu kelintadienis yra + apsauga nuo blogos ivesties//
+
+	/*var ivestis1 = prompt('ivesite skaiciu nuo 1 iki 7');
+
+	if(ivestis1 == 1){
+		console.log('Pirmadienis');
+	}else if(ivestis1 == 2){
+		console.log('Antradienis');
+	}else if(ivestis1 == 3){
+		console.log('Treciadienis');
+	}else if(ivestis1 == 4){
+		console.log('Ketvirtadienis');
+	}else if(ivestis1 ==5){
+		console.log('Penktadienis');
+	}else if(ivestis1 == 6){
+		console.log('Sestadienis');
+	}else if(ivestis1 == 7){
+		console.log('Sekmadienis');
+	}else{
+		console.log('Bloga ivestis');
+	}*/
+
+
+	//parasykite programa, kuri suranda visas kvadratines lygties saknis//
+
+
+	/*var ivestisa, ivestisb, ivestisc;
+
+	ivestisa = prompt('iveskite koeficienta a');
+	ivestisb = prompt('iveskite koeficienta b');
+	ivestisc = prompt('iveskite koeficienta c');
+
+	var diskriminantas = ivestisb*ivestisb - 4*ivestisa*ivestisc;
+
+	if(diskriminantas > 0){
+		//turesime 2saknis
+		var saknis1, saknis2;
+
+		saknis1 = (ivestisb*-1 + Math.sqrt(diskriminantas))/(2*ivestisa);
+		saknis2 = (ivestisb*-1 - Math.sqrt(diskriminantas))/(2*ivestisa);
+		console.log(ivestisa = 'x^2+'+ivestisb+'x'+ivestisc+'= 0');
+		console.log('Saknis 1:'+saknis1);
+		console.log('Saknis 2:'+saknis2);
+
+	}else if(diskriminantas == 0){
+		//1 saknis
+		var saknis;
+		saknis = -1*(ivestisb/2*ivestisa);
+		console.log(ivestisa = 'x^2'+ivestisb+'x'+ivestisc+'= 0');
+		console.log('Saknis:'+saknis);
+	}else{
+		console.log('diskriminantas yra neigiamas:' +diskriminantas);
+	}*/
+
+
+	//koda, kuris spausdina tik visus nelyginius skaicius, nuo 0 iki ivesto sk. papildomai = jei sk dalinasi is 3 - dauginti is 10//
+
+	/*var ivestis = prompt('iveskite skaiciu');
+
+	for (var i = 0; i <= ivestis; i++){
+		if(i % 2 != 0){
+			console.log(i);
+		if(i % 3 == 0 && i % 2 != 0){
+			console.log(i*10);
+		}
+}}*/
+
+/*var ivestis = prompt('iveskite skaiciu')
+
+	for (var i = 0; i <= ivestis; i++){
+		if(i % 2 != 0){
+			console.log(i);
+		if(i % 3 == 0){
+			console.log(i*10);
+		}
+	}
+}*/
+
+	//atspausdinti koda, kuris atspausdina visu naturaliuju skaiciu suma nuo 0 iki ivesto sk//
+
+	/*var ivestis;
+	var suma = 0;
+	
+	var ivestis = prompt('iveskite skaiciu');
+		for(var i = 0; i<=ivestis; i++){
+			suma += i;
+			console.log(suma);
+		}*/
+
+
+		//ivedamas penkiazenklis skaicius. reikia atspausdinti visus jo skaitmenis zodziais.
+		//pvz: 12345->vienas du trys keturi penki//
+
+		/*var ivestis;
+
+		var ivestis = prompt('iveskite penkiazenkli skaiciu');
+
+		var pirmassk, antrassk, treciassk, ketvirtassk, penktassk;
+
+		for(var i = 0; i <=4; i++){
+			if(ivestis >=9999){
+				penktassk = ivestis % 10;
+			}else if(ivestis >=999){
+				ketvirtassk = ivestis % 10;
+			}else if(ivestis >=99){
+				treciassk = ivestis %10;
+			}else if(ivestis >= 9){
+				antrassk = ivestis %10;
+			}else{
+				pirmassk = ivestis %10;
+			} 
+			ivestis = ivestis / 10;
+		}
+
+		var skmas = [parseInt(pirmassk), parseInt(antrassk), parseInt(treciassk), parseInt(ketvirtassk), parseInt(penktassk)];
+
+			for(i= 0; i <=4; i++){
+				if(skmas[i] == 1){
+					console.log('vienas');
+				}else if(skmas[i] == 2){
+					console.log('du');
+				}else if(skmas[i] == 3){
+					console.log('trys');
+				}else if(skmas[i] == 4){
+					console.log('keturi');
+				}else if(skmas[i] ==5){
+					console.log('penki');
+				}else if(skmas[i] ==6){
+					console.log('sesi');
+				}else if(skmas[i] == 7){
+					console.log('septyni');
+				}else if(skmas[i] == 8){
+					console.log('astuoni');
+				}else if(skmas[i] == 9){
+					console.log('devyni');
+				}else if(skmas[i] == 0){
+					console.log('nulis');
+
+			}
+		}
+
+
+		//parseInt(paima skaiciaus tik sveikaja dali)*/
+		////
+
+		/*var arr = [1,5,6,9,8,7,3,6,1,4];
+		var suma = 0;
+
+		for(var i = 0; i < arr.length; i++){
+			suma += arr[i];
+		}
+		console.log(suma);*/
+
+
+		//pakesiti masyvo seka atvirkstine tvarka//
+
+		/*var arr = [1,5,6,9,8,7,3,6,1,4];
+		var res = [];
+		for(var i = 0; i < arr.length; i++){
+			res.push(arr[(arr.length - 1)]);
+
+		}
+		console.log(res);*/
+
+
+		//suskaiciuoti ivesto skaiciaus skaitmenu suma//
+
+		/*var ivestis = prompt('iveskite skaiciu');
+
+		var suma = 0;
+		var skaitmuo; //jame saugome kintama skaiciu//
+
+		while(ivestis > 0){
+			skaitmuo = Math.floor(ivestis % 10); //apvalinti i mazaja puse//
+
+			suma = suma + skaitmuo;  //prideti is virsau ir numesti likusi skaitmeni//
+			ivestis = ivestis / 10;
+		}
+			console.log(parseInt(suma));*/
+
+
+				//atspausdinkite ivesto skaiciaus atvirkstini varianta. + patikrinimas, kad skaicius, negali buti maziau penkiazenklis//
+		/*var res = []; //rezultata istumti//
+		var skaitmuo;
+		
+		var ivestis = prompt('iveskite skaiciu');
+		
+		while(ivestis > 0){
+			skaitmuo = Math.floor(ivestis % 10); //apvalinti i mazaja puse//
+			ivestis = Math.floor(ivestis / 10);
+			res.push(skaitmuo);
+		}
+			console.log(res); //rezultata istumti po isdalinimo//*/
+
+
+			//Patikrinti ar ivestas skaicius yra palindromas
+
+
+
+
+
+
+			/*var ivestis = prompt('iveskite skaiciu');
+			var skaitmuo = 0;
+			var skaicius = [];
+			var lyginis = 0;
+			var yraPalindromas = false;
+
+			//susivedam skaitmenis i masyva patikrinimae ar skaitmenu skaicius yra lyginis
+
+			while(ivestis > 0){
+				skaitmuo = Math.floor(ivestis % 10);
+				skaicius.push(skaitmuo);
+				ivestis = Math.floor(ivestis / 10);
+				lyginis ++;  ///kiekvienai iteracijai (dalybai) prideda po viena)
+			}
+			if (lyginis % 2 ==0){
+				for(var i = 0; i<skaicius.length/2; i++){
+					if(skaicius[i] == skaicius[(skaicius.length-1)-i]){
+						yraPalindromas = true;
+
+					}else{
+						yraPalindromas = false;
+						break;
+					}
+				}
+			}else{
+				
+				for(var i = 0; i<skaicius.length/2; i++){
+					if(skaicius[i] == skaicius[(skaicius.length-1)-i]){
+						yraPalindromas = true;
+
+					}else{
+						yraPalindromas = false;
+						break;
+					}
+				}
+			}
+			console.log(yraPalindromas);*/
+			
+
+
+			//parasyti koda, kuris pirmo masyvo pabaiga suklijuoja su antro masyvo pradzia (masyvai po 5 elementus)
+
+
+			var arr1 = [1,2,3,4,5];
+			var arr2 = [6,7,8,9,10];
+
+			for(var i = 0; i <=4; i++){
+				arr1.push(arr2[i]);
+			}
+			console.log(arr1);
+
+</script>
+</body>
+</html>

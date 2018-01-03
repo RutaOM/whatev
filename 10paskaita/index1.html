@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>	gyventojas</title>
+</head>
+<body>
+	
+		<script type ='text/javascript'>
+		var gyventojas = {
+						vardas: 'Jonas',
+						pavarde: 'Jonaitis',
+						miestas: 'Vilnius', 
+						pastoKodas: 'LT-08451',
+						mokestis: 20.57
+					}
+					document.write('<h1>'+gyventojas.vardas+' '+gyventojas.pavarde+'</h1>');
+					
+					document.write('<h2>'+gyventojas.miestas+'</h2>');
+					document.write('<h2>'+gyventojas.pastoKodas+'</h2>');
+					document.write('<p> sumokejo:'+gyventojas.mokestis+'</p>');
+
+
+						//sukurti obkekta ir naudoijantis objekto laukais ir ju pasiekimu atspausdinti: knygos autorius: brendan Eich, knygos pavadinias'jab=va script bible, kaina22 eur.
+
+
+				var rasytojas = {
+					autorius: 'Brenden Eich',
+					knygosPavadinimas: 'JavaScript Bible',
+					kaina: 22
+				}
+				document.write('<h3> Knygos autorius: '+rasytojas.autorius+'</h3>');
+				document.write('<p> Knygos pavadinimas: '+rasytojas.knygosPavadinimas+'</p>');
+				document.write('<p> Kaina: '+rasytojas.kaina+'</p>');
+
+
+				var knygos = {
+						vardas: 'Tim Ferris',
+						parasytosKnygos: ['Tribe of Mentors', 'Tools of Titans', 'The 4 Hors Body', 'The 4 Hour Workweek']
+				}
+
+				document.write('<h3> Autoriaus: '+knygos.vardas+' parasytos knygos yra:</h3>');
+				document.write('<p>'+knygos.parasytosKnygos+'</p>');
+				
+
+				var imone = {
+					pavadinimas:'Apple',
+					departamentai: [{
+									vietove:'Washingtono',
+									 atsakingasAsmuo: 'John'},
+									 {vietove:'Clevelando',
+									atsakingasAsmuo: 'Joe'},
+									{vietove:'Michigano',
+									atsakingasAsmuo: 'George'}]
+									}
+
+				document.write('Imoneje ' +imone.pavadinimas+ ' uz produkto gamyba yra atsakingi trys departamentai: ' +imone.departamentai[0].vietove+ ' (atsakingas asmuo: '+ imone.departamentai[0].atsakingasAsmuo +'), '+imone.departamentai[1].vietove+ ' (atsakingas asmuo: ' +imone.departamentai[1].atsakingasAsmuo +'), '+imone.departamentai[2].vietove+ ' (atsakingas asmuo: ' +imone.departamentai[2].atsakingasAsmuo+'). ');
+
+	</script>
+
+</body>
+</html>

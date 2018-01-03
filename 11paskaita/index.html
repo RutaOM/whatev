@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jc4</title>
+</head>
+<body>
+	<script type ='text/javascript'>
+
+		/*lt plotas 65300 km kv 2 814 696 gyventojai
+		vietnamas plotas 331210 km kv 95 414 640 gyventojai
+		belgija plotas 30528 km kv 11 443 830 gyventojai
+		japonija plotas 377962 km kv 126 045 211 gyventojai
+		nigerija plotas 923 768 km kv 191 835 936 gyventojai
+
+		*/
+
+		var salys = [{salis: 'Lietuva',
+					plotas: 65300,
+					gyventojusk: 2814696},
+					{salis: 'Vietnamas',
+					plotas: 331210,
+					gyventojusk: 95414640},
+					{salis: 'Belgija',
+					plotas: 30528,
+					gyventojusk: 11443830},
+					{salis: 'Japonija',
+					plotas: 377962,
+					gyventojusk: 126045211},
+					{salis: 'Nigerija',
+					plotas: 923768,
+					gyventojusk: 191835936}]
+					
+
+					
+					getAreaPerCapita = function(x,y){
+						var plotasZmogui = x/y;
+
+						return plotasZmogui.toFixed(2);
+					}
+
+
+					for(var i = 0; i<salys.length; i++){
+						document.write('Salis:'+salys[i].salis+' joje gyvena'+salys[i].gyventojusk+'gyventoju. Valstybes plotas: '+salys[i].plotas+', plotas tenkantis vienam gyventojui: '+getAreaPerCapita(salys[i].gyventojusk,salys[i].plotas));
+					}
+
+	/*	for(x in zmones){ //sakoma sukurti nauj lauka @pilna'
+			zmones[x].pilna = pilnaKaina(zmones[x].suma, zmones[x].kiekis)
+		}*/
+
+
+	/*	var salys = [{salis: 'Lietuva',
+					plotas: 65300,
+					gyventojusk: 2814696},
+					{salis: 'Vietnamas',
+					plotas: 331210,
+					gyventojusk: 95414640},
+					{salis: 'Belgija',
+					plotas: 30528,
+					gyventojusk: 11443830},
+					{salis: 'Japonija',
+					plotas: 377962,
+					gyventojusk: 126045211},
+					{salis: 'Nigerija',
+					plotas: 923768,
+					gyventojusk: 191835936}]
+					
+
+					
+					getAreaPerCapita = function(x,y){
+						var plotasZmogui = x/y;
+
+						return plotasZmogui.toFixed(2)
+					}
+
+
+					for(var i = 0; i<salys.length; i++){
+						document.write('Salis:'+salys[i].salis+' joje gyvena'+salys[i].gyventojusk+'gyventoju. Valstybes plotas: '+salys[i].plotas+', plotas tenkantis vienam gyventojui: '+getAreaPerCapita(salys[i].gyventojusk,salys[i].plotas));
+					}*/
+
+			
+
+	</script>
+
+</body>
+</html>

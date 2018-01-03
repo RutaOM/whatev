@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+</head>
+<body>
+	<script>
+		var x = 4; 
+		var y = 0;
+		var z = -1;
+
+
+		if(x>y && x>z){
+			if(y>z){
+				console.log(x + ", " + y + ", "+ z);
+		}else{
+				console.log(x + "," + z + ", "+ y);
+		}
+	}
+		else if(y>z && y>x){
+			if(z>x){
+				console.log(y + "," + z +"," +x);
+		}else{
+				console.log(y + "," + x + "," +z);
+		}
+	}else if(z>x && z>y){
+		if (x>y){
+			console.log(z + "," + x + "," + y);
+		}else{
+			console.log(z + "," + y + "," + x);
+		}
+	}
+
+	i*j
+
+	for(var i = 0; i<=10; i++){
+		for(var j = 0; j<=10; j++){
+			console.log(i + "*" + j + "=" + i*j);
+
+		}
+	}
+	
+	
+	var simbolis= "*";
+
+	for(var i = 0; i<=9; i++){
+		console.log(simbolis);
+		simbolis += "*";
+
+}
+
+ for(var i = 0; i<=100; i++){
+ 	if(i%2 ==0){
+ 		console.log(i + "lyginis"); 
+ 	}
+ 	else{
+ 		console.log(i + "nelyginis");
+ 	}
+ }
+
+
+ 	var a = -1;
+ 	var b = -3;
+ 	var c = 4;
+
+ 	if(a*b*c <0){
+ 		console.log("-");
+ 	}
+ 	else{
+ 		console.log("+");
+ 	}
+ 	
+
+ 	/*t>promt ir alert*/
+
+
+ 	var tempFar = prompt("irasykite temperatura farenheitais");
+ 	var tempCel;
+ 	tempCel = (tempFar - 32) / 1.8;
+ 	alert(tempFar = "is Farenheitu" + tempCel.toFixed(2) + "C");
+
+
+
+  var skaiciai = [7,8,9,10,11];
+  console.log(skaiciai[2]);
+  skaiciai[2] = 5;
+  console.log(skaiciai[2]);
+
+
+
+  	/*	var automobiliai = ["bmw", "audi", "saab"];		
+  		console.log(automobiliai[1]);
+
+
+  		for(var i = 0; i<=3; i++){
+  			console.log(automobiliai[i]);
+  		}						
+
+
+  		var misrus = ["audi", 5, "bmv", 9];
+  		console.log(misrus[i]);
+
+  		*/
+
+  		/*naudjant promt komanda, 5 ivestus skaicius sudeti i masyva ir juos atspausdinti.*/
+
+
+  		
+  		/*var skaiciai = [0,0,0,0,0];
+
+  		for(var i = 0; i <= 4; i++){
+  			var ivestis = prompt("iveskite skaiciu");
+  			skaiciai[i] = ivestis;
+  		}
+  			console.log(skaiciai);
+
+  			*/
+
+
+
+  			var arr = [0, 1, 7, -1, -6, 20, 7];
+
+  			for(var i = 0; i <= 6; i++){
+  				if(arr[i]<0){
+  					arr[i] = arr[i]*-1;
+  				}
+  				if(arr[i] ==0){
+  					arr[i] = arr[i] + arr[i+1];
+  				}
+  				if (arr[i]>5){
+  					arr[i] = arr[i] *2;
+  				}
+			}
+			console.log(arr);
+
+
+
+				var elementai = [0,0,0,0,0];
+			
+				for(var i = 0; i <= 4; i++){
+					var ivestis = prompt("iveskite skaiciu");
+					if(
+						ivestis % 2 == 0 ||
+						ivestis < 0 ||
+						ivestis % 7 == 0 && ivestis >0){
+						elementai[i] = ivestis;
+					} 
+				}	
+				for(i = 0; i <= 4; i++){
+					if(elementai[i] % 2 == 0){
+						console.log("skaicius dalinasi is dvieju");
+					}
+					if(elementai[i] < 0){
+						console.log("skaicius: "+ elementai[i] +" jo kvadratas: " + elementai[i]*elementai[i] + "jo kubas: "+elementai[i]*elementai[i]*elementai[i]);
+					}
+				}
+
+
+
+ /*	a = -1, b = -3; c = 4
+ atspausdinti skaiciu sandaugs zenkla
+ rezultatas: sandaugos zenklas yra + */
+
+
+	/*parasyti cikla nuo 0 iki 100, kuris atspausdina skaicius, ir prie kiekvieno paraso ar is lyginis ar ne*/
+	
+	
+	</script>
+</body>
+</html>

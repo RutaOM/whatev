@@ -1,0 +1,16 @@
+header{
+	background-image: url(img/kate.jpg);
+}
+header h1{
+	color: white;
+	padding: 100px 0;
+	font-family: gabriola;
+}
+.pav{
+	background-image: url(img/kate.jpg);
+	width: 300px;
+	height: 300px;
+}
+.container{
+	margin-bottom:50px;
+}

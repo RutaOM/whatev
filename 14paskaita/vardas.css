@@ -1,0 +1,12 @@
+.mygtukas{
+	margin: 20px auto;
+	background-color: teal; 
+	border-radius: 5px;
+	border: 1px solid teal;
+	color: white;
+
+}
+
+.container{
+	margin: 55px auto;
+}

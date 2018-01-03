@@ -1,0 +1,67 @@
+.main-header{
+	background-image: url(img/books.jpg);
+}
+.button-type{
+	display:inline-block;
+	padding: 8px 16px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+header h1{
+	color: white;
+	padding: 100px 0;
+	font-family: gabriola;
+}
+.book{
+	word-wrap: break-word;
+}
+p{
+	margin: 0;	
+}
+textarea {
+    resize: none;
+}
+.align-top-right{
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 24px;
+}
+.popup-container{
+	position: relative;
+	padding:20px 16px;
+}
+.modal-screen{
+	background-color: white;
+	width: 60%;
+	margin:0 auto;
+	padding: 10px; 
+	border-radius: 15px;
+}
+#screen{
+	padding-top: 50px;
+	display: none;
+	z-index: 3;
+	left: 0;
+	top: 0;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.4);
+	margin: auto;
+	overflow: auto;
+}
+ 
+ #screen-item{
+ 	padding-top: 50px;
+	display: none;
+	z-index: 3;
+	left: 0;
+	top: 0;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.4);
+	margin: auto;
+	overflow: auto;
+}

@@ -1,0 +1,31 @@
+.jumbotron{
+	background-image:url(suo.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: center;
+	background-size: cover;
+}
+
+
+.jumbotron h1{
+	color: red;
+}
+
+.jumbotron > .container >h1{
+	color:blue;
+}
+.panel {
+	margin-top: 10px
+}
+.panel-body{
+	font-family: gabriola;
+	font-size:30px;
+}
+label{
+	font-weight: 10;
+}
+.panel-heading h4{
+	font-family: gabriola;
+	font-size:40px;
+	text-align: center;
+}

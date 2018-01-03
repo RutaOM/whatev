@@ -1,0 +1,120 @@
+
+@keyframes fade-in{
+	from {opacity: 0;}
+}
+	to {opacity: 1;}
+
+body,h1,h2{
+	margin: 0;
+}
+h2{
+	text-align: center;
+}
+body{
+	min-height: 100vh;
+	background: rgb(122,65,50);
+background: -moz-linear-gradient(45deg, rgba(122,65,50,1) 0%, rgba(104,55,42,1) 44%, rgba(79,41,31,1) 100%);
+background: -webkit-linear-gradient(45deg, rgba(122,65,50,1) 0%,rgba(104,55,42,1) 44%,rgba(79,41,31,1) 100%);
+background: linear-gradient(45deg, rgba(122,65,50,1) 0%,rgba(104,55,42,1) 44%,rgba(79,41,31,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7a4132', endColorstr='#4f291f',GradientType=1 );
+}
+h1{
+	text-shadow: 5px 5px 5px black;
+	color: white;
+}
+	
+#antraste{
+	/*background-color: grey;*/
+	background-image: url(back.jpg);
+	text-align: center;
+	padding: 40px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/*komentaras*/
+#meniu{
+	background-color: darkred;
+	padding: 20px;
+	text-align: center;
+	border: 1px solid white;
+
+}
+#turinys{
+	position: relative;
+	background-color: rgba(255,255,255,0.5); /*spalva, spalva, spalva, kiek ji matosi*/
+	width: 70%;
+	margin: 0 auto;
+	padding: 25px;
+	border: 1px solid white;
+
+
+
+}
+#meniu a{
+	text-decoration: none; /*nuima pabraukima*/
+	color: white;
+	border: 1px solid white;
+	padding: 5px;
+	border-radius: 40px;
+	background-color: #ac3939;
+	margin: 7px;
+}
+
+#meniu a:hover{
+	background-color: grey;
+	box-shadow: 10px 10px 10px black;
+}
+#meniu a:active{
+background-color:grey;
+}
+
+#baltas_kvadratas{
+	background-color:white;
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	right:0;
+	top: 0;
+	animation-name: fade-in;
+	animation-duration: 4s;
+	/*animation-iteration-count:12s;*/
+	/*z-index: */
+}
+.nuotrauka{
+	max-width:100%;
+	border-radius: 10px;
+	opacity: 0.5;
+}
+.nuotrauka_wrap{
+	text-align: center;
+}
+.nuotrauka:hover{
+	box-shadow: 15px 15px 15px black; /*seselio pasisilinkimas, spalva*/
+	opacity: 1;
+}
+.nuotraukos_tekstas{
+	position: relative;
+	bottom: 40px;
+}
+
+.yellow{
+	background-color: yellow;
+	width: 100px;
+	height:30px;
+}
+.green{
+	background-color: green;
+	width: 100px;
+	height:30px;
+}
+.red{
+	background-color: red;
+	width: 100px;
+	height:30px;
+}
+.plaukia{
+	float: left;
+}
+.veliava{
+	margin: 10px 10px 10px 10px;
+}

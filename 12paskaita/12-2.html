@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header class="main-header">
+			<div class="container">
+				<h1 class="main-title">Biblioteka</h1>
+			</div>
+		
+		</header>	
+
+		<div id="screen-item" onclick= "document.getElementById(this.id).style.display = 'none'">
+			
+		</div>
+
+		<button type="button" class="btn btn-primary" onclick="document.getElementById('screen').style.display ='block'">Prideti knyga</button>
+
+	<div id="screen">
+		
+<div class="modal-screen">
+			<header class="popup-container">	
+				<span class="button-type align-top-right" onclick="document.getElementById('screen').style.display = 'none'">&times;</span>
+				<h2>Pridekite knyga</h2>
+			</header>
+			<hr>
+			<div class="popup-container">
+				<form class="mt-5 library-form">
+			<div class="form-group row">
+				<label for="author" class="col-sm-2 control-label">Autorius:</label>
+				<div class="col">
+					<input type="text" class="form-control" id="author" placeholder="Autorius">
+				</div>
+
+			</div>
+			<div class="form-group row">
+				<label for="title" class="col-sm-2 control-label">Pavadinimas:</label>
+				<div class="col">
+					<input type="text" class="form-control" id="title" placeholder="Pavadinimas">
+				</div>
+
+			</div>
+			<div class="form-group row">
+				<label for="publisher" class="col-sm-2 control-label">Leidykla:</label>
+				<div class="col">
+					<input type="text" class="form-control" id="publisher" placeholder="Leidykla">
+				</div>
+
+			</div>
+			<div class="form-group row">
+				<label for="date" class="col-sm-2 control-label">Data:</label>
+				<div class="col">
+					<input type="text" class="form-control" id="date" placeholder="Data">
+				</div>
+
+			</div>
+
+			<div class="form-group row">
+				<label for="description" class="col-sm-2 control-label">Aprasymas:</label>
+				<div class="col">
+					<textarea type="text" rows="5" class="form-control" id="description" placeholder="Aprasymas"></textarea>
+				</div>
+
+			</div>
+</div>
+<hr>
+			<footer class="popup-container">
+				<button type="button" class="btn btn-primary btn-save-book">Prideti</button>
+
+			<button type="button" class="btn btn-primary btn-clear-form">Isvalyti</button>
+		</form>
+			</footer>
+	
+		</div>
+		</div>
+	<section class="container">
+		<!--
+		<form class="mt-5 library-form">
+			<div class="form-group row">
+				<label for="author" class="col-sm-2 control-label">Autorius:</label>
+				<div class="col">
+					<input type="text" class="form-control" id="author" placeholder="Autorius">
+				</div>
+
+			</div>
+			<div class="form-group row">
+				<label for="title" class="col-sm-2 control-label">Pavadinimas:</label>
+				<div class="col">
+					<input type="text" class="form-control" id="title" placeholder="Pavadinimas">
+				</div>
+
+			</div>
+			<div class="form-group row">
+				<label for="publisher" class="col-sm-2 control-label">Leidykla:</label>
+				<div class="col">
+					<input type="text" class="form-control" id="publisher" placeholder="Leidykla">
+				</div>
+
+			</div>
+			<div class="form-group row">
+				<label for="date" class="col-sm-2 control-label">Data:</label>
+				<div class="col">
+					<input type="text" class="form-control" id="date" placeholder="Data">
+				</div>
+
+			</div>
+
+			<div class="form-group row">
+				<label for="description" class="col-sm-2 control-label">Aprasymas:</label>
+				<div class="col">
+					<textarea type="text" rows="5" class="form-control" id="description" placeholder="Aprasymas"></textarea>
+				</div>
+
+			</div>
+
+
+			<button type="button" class="btn btn-primary btn-save-book">Prideti</button>
+
+			<button type="button" class="btn btn-primary btn-clear-form">Isvalyti</button>
+		</form>-->
+		<hr>
+		<div class="book-list">
+			
+		</div>
+
+	</section>
+<script src="books.js"></script>
+</body>
+</html>
